@@ -11,10 +11,8 @@ genomeScoreData = pd.read_csv('data/genome-scores.csv')
 
 
 def generateGenomeMatrix(moviesData, genomeScoresData):
-	x = moviesData[['movieId', 'title']]
 	y = genomeScoresData.pivot(index = 'movieId', columns = 'tagId', values = 'relevance')
-	z = x.merge(y, how = 'left', on = 'movieId')
-	z.to_csv('data/generatedGenomeMatrix.csv')
+	y.to_csv('data/generatedGenomeMatrix.csv')
 
 
 if __name__ == "__main__":
