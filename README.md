@@ -20,9 +20,10 @@ Data contents include a list of movies, movie ratings, movie tags, and a relevan
 Scripts
 ======
 
-movieDataStage.py
+*movieDataStage.py*
 _______________________
 This file is meant for a one time run. It currently pivots the file genome-scores.csv to a structure in which:
+	
 	columns = genome tags
 	rows = movies
 	values = relevance score
@@ -31,17 +32,19 @@ New table structure is then written to the csv generatedGenomeMatrix.csv
 
 
 
-movieGenomeSimilarity.py
--------------------------
+*movieGenomeSimilarity.py*
+__________________________
 
 This file identifies similar movies to an inputted movie.  Sklearn-cosine similarity is used 
 
 Input: 
+	
 	(user input) movieId for a specific movie identified in the file movies.csv
 	(file input) movies.csv
 	(file input) generatedGenomeMatrix.csv
 
 Execution: command line exection as follows 
+
 	--> python movieGenomeSimilarity.py <movieId>
 
 Methodology:
