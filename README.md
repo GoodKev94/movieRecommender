@@ -1,12 +1,13 @@
 Movie Recommender
 by Kevin Bichoupan
 
-#Purpose
+Purpose
+========
 
 This project is used to help recommend movies
 
 
-=======
+
 Data
 =======
 
@@ -15,7 +16,7 @@ The data for this project is sourced from grouplens (https://grouplens.org/datas
 Data contents include a list of movies, movie ratings, movie tags, and a relevance score for each movie for each tag.
 
 
-======
+
 Scripts
 ======
 
