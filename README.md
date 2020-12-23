@@ -1,9 +1,7 @@
 Movie Recommender
 by Kevin Bichoupan
 
-=============
-Purpose
-=============
+#Purpose
 
 This project is used to help recommend movies
 
@@ -21,9 +19,7 @@ Data contents include a list of movies, movie ratings, movie tags, and a relevan
 Scripts
 ======
 
-------------------
-movieDataStage.py
-------------------
+##movieDataStage.py
 
 This file is meant for a one time run. It currently pivots the file genome-scores.csv to a structure in which:
 	columns = genome tags
