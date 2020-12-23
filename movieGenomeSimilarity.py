@@ -4,6 +4,9 @@ import sys
 
 def getGenomeRelevanceSimilars(movieId):
 
+
+	# TODO: add a conditional to check if movieId exists in database
+
 	movieData = pd.read_csv('data/movies.csv')
 	genomeMatrixdf = pd.read_csv('data/generatedGenomeMatrix.csv')
 
@@ -12,6 +15,7 @@ def getGenomeRelevanceSimilars(movieId):
 	genomeMatrixMovieIds = genomeMatrixdf['movieId']
 
 	movieIdIndex = genomeMatrixMovieIds[genomeMatrixMovieIds == movieId].index[0]
+
 
 	genomeCosineSimilarity = pd.DataFrame(sklearn_cosine_similarity(genomeMatrixRelevanceScores))
 
